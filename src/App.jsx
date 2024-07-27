@@ -1,5 +1,6 @@
 
 import Apropos from "./components/Apropos";
+import Contact from "./components/Contact";
 import HomeHead from "./components/HomeHead";
 import Nav from "./components/Nav";
 
@@ -11,6 +12,7 @@ function App() {
       <Nav/>
       <HomeHead/>
       <Apropos/>
+      <Contact/>
       
       
     </>
