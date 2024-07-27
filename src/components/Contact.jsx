@@ -6,7 +6,7 @@ export default function Contact() {
         <h1 className="uppercase pt-12 pl-12 font-bold text-5xl text-[#A95834]">
           à propos
         </h1>
-      <div className="relative mt-16 w-full  h-[110vh] bg-white">
+      <div className="relative mt-16 w-full  h-[100vh] bg-white">
         <div
           style={{ backgroundImage: `url(${cov})` }}
           className="absolute bottom-0 w-full sm:h-3/5 h-full bg-contain bg-center bg-no-repeat"
@@ -19,7 +19,7 @@ export default function Contact() {
                 <h1>klhggilygyug</h1>
                 <h1>klhggilygyug</h1>
             </div>
-          <div className="p-6 text-[#3B4862] max-w-prose">
+          <div className="pr-12 rounded-l-xl py-16 text-[#3B4862] bg-black/10 ">
             <form className="ml-auto sm:w-[40vw] space-y-4">
               <div  className="grid  gap-6 mb-6 md:grid-cols-2">
                 <div>
