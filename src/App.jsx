@@ -1,6 +1,7 @@
 
 import Apropos from "./components/Apropos";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import HomeHead from "./components/HomeHead";
 import Nav from "./components/Nav";
 
@@ -13,7 +14,7 @@ function App() {
       <HomeHead/>
       <Apropos/>
       <Contact/>
-      
+      <Footer/>
       
     </>
   )

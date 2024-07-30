@@ -4,15 +4,15 @@ export default function Contact() {
   return (
     <div>
         <h1 className="uppercase pt-12 pl-12 font-bold text-5xl text-[#A95834]">
-          à propos
+          contact
         </h1>
-      <div className="relative mt-16 w-full  h-[100vh] bg-white">
+      <div className="relative mt-16 w-full  sm:h-[100vh] bg-white">
         <div
           style={{ backgroundImage: `url(${cov})` }}
           className="absolute bottom-0 w-full sm:h-3/5 h-full bg-contain bg-center bg-no-repeat"
         ></div>
         <div className="relative max-w-screen z-10  md:grid-cols-2 grid ">
-            <div className="my-auto bg-[#3C3C3C] rounded-r-3xl p-8 px-14 w-fit">
+            <div className="my-auto bg-[#3C3C3C] rounded-r-3xl p-10 px-14 w-fit">
                 <div className="flex p-2 text-white ">
                   <div className="mr-6">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8 max-w-8">
@@ -42,12 +42,12 @@ export default function Contact() {
 
                   </div>
                   <div>
-                    <h1>Avenue de l'environnement, Sousse, <br/>
+                    <h1>Avenue de l’environnement, Sousse, <br/>
                     Tunisia, 4000</h1>
                   </div>
                 </div>
             </div>
-          <div className="md:pr-12 rounded-l-xl py-16 text-[#3B4862] bg-black/10 ">
+          <div className="md:pr-12  rounded-l-xl py-16 text-[#3B4862] bg-black/5 ">
             <form className="ml-auto sm:w-[40vw] space-y-4">
               <div  className="grid  gap-6 mb-6 md:grid-cols-2">
                 <div>
@@ -60,8 +60,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="first_name"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                    placeholder="NOM ET PRENOM"
+                    className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
                 </div>
@@ -75,8 +74,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="last_name"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                    placeholder="EMAIL"
+                    className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
                 </div>
@@ -92,8 +90,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="website"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                    placeholder="TELEPHONE"
+                    className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
                 </div>
@@ -107,8 +104,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="visitors"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                    placeholder="PROJET"
+                    className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
                 </div>
@@ -116,11 +112,11 @@ export default function Contact() {
               <textarea
                 placeholder="Message"
                 rows="6"
-                className="w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"
+                className="w-full rounded-md px-4 bg-gray-100/60 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"
               ></textarea>
               <button
                 type="button"
-                className="text-white bg-blue-500 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6"
+                className="text-white bg-[#176A82BD] hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full  !mt-6"
               >
                 ENVOYER
               </button>
