@@ -1,6 +1,28 @@
 import cov from "../img/contactcov.png";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <div>
         <h1 className="uppercase pt-12 pl-12 font-bold text-5xl text-[#A95834]">
@@ -48,7 +70,7 @@ export default function Contact() {
                 </div>
             </div>
           <div className="md:pr-12  rounded-l-xl py-16 text-[#3B4862] bg-black/5 ">
-            <form className="ml-auto sm:w-[40vw] space-y-4">
+            <form className="ml-auto sm:w-[40vw] space-y-4" ref={form} onSubmit={sendEmail} >
               <div  className="grid  gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
@@ -59,7 +81,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    id="first_name"
+                    name="user_name"
                     className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
@@ -73,7 +95,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    id="last_name"
+                    name="user_email"
                     className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
@@ -89,7 +111,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    id="website"
+                    name="user_phone"
                     className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
@@ -103,7 +125,7 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    id="visitors"
+                    name="projet"
                     className="bg-gray-100/60 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     required
                   />
@@ -112,10 +134,13 @@ export default function Contact() {
               <textarea
                 placeholder="Message"
                 rows="6"
+                name="user_email"
                 className="w-full rounded-md px-4 bg-gray-100/60 text-gray-800 text-sm pt-3 outline-blue-500 focus:bg-transparent"
               ></textarea>
               <button
-                type="button"
+              type="submit"
+               value="Send"
+                
                 className="text-white bg-[#176A82BD] hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full  !mt-6"
               >
                 ENVOYER
