@@ -2,7 +2,7 @@ import cov from "../img/aprop.png";
 
 export default function Apropos() {
   return (
-    <div className="relative max-w-screen h-[97vh]">
+    <div className="relative max-w-screen sm:h-[97vh]">
       <div
         style={{
           backgroundImage: `url(${cov})`,
@@ -12,12 +12,12 @@ export default function Apropos() {
         }}
         className="bg-cover h-full -z-20"
       >
-        <h1 className="uppercase pt-12 pl-12 font-bold text-5xl text-[#A95834]">
+        <h1 className="uppercase font-averia pt-12 pl-12 font-bold text-5xl text-[#A95834]">
           à propos
         </h1>
         <div className="mt-14">
           <p
-            className="ml-auto sm:h-[30vw]  sm:max-w-[60vw] p-16  max-w-[80vw]  sm:text-2xl rounded-l-xl bg-[#f1cb964a]"
+            className="ml-auto sm:h-[76vh] text-[#1F2855] sm:w-[75vw]    sm:p-20 p-10  max-w-[80vw]  sm:text-3xl rounded-l-xl bg-[#f1cb964a]"
             style={{ boxShadow: '0px 4px 18.9px 0px #000000A1' }}
           >
             COGEB International CGI est une société à responsabilité limitée

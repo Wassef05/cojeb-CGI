@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <div>
-        <h1 className="uppercase pt-12 pl-12 font-bold text-5xl text-[#A95834]">
+        <h1 className="uppercase pt-12 pl-12 font-averia font-bold text-5xl text-[#A95834]">
           contact
         </h1>
       <div className="relative mt-16 w-full  sm:h-[100vh] bg-white">
@@ -69,8 +69,8 @@ export default function Contact() {
                   </div>
                 </div>
             </div>
-          <div className="md:pr-12  rounded-l-xl py-16 text-[#3B4862] bg-black/5 ">
-            <form className="ml-auto sm:w-[40vw] space-y-4" ref={form} onSubmit={sendEmail} >
+          <div className="md:pr-12 p-6  rounded-l-xl py-16 text-[#3B4862] bg-black/5 ">
+            <form className="ml-auto  sm:w-[40vw] space-y-4" ref={form} onSubmit={sendEmail} >
               <div  className="grid  gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
