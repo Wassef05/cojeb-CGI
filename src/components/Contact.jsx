@@ -25,9 +25,9 @@ export default function Contact() {
 
   return (
     <div>
-        <h1 className="uppercase pt-12 pl-12 font-averia font-bold text-5xl text-[#A95834]">
+        <h1 className="uppercase pt-16 pl-16 font-averia font-bold text-5xl text-[#A95834]">
           contact
-        </h1>
+        </h1> 
       <div className="relative mt-16 w-full  sm:h-[100vh] bg-white">
         <div
           style={{ backgroundImage: `url(${cov})` }}

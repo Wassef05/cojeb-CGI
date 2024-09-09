@@ -2,7 +2,7 @@ import logo from "../img/footerlogo.png";
 
 export default function Footer() {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="bg-[#176A82] py-8">
         <div className="mx-auto w-full max-w-screen px-4 py-6 lg:py-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
@@ -53,12 +53,12 @@ export default function Footer() {
               </h2>
               <ul className="text-white text-center md:text-left">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="mailto:cogebimmobiliere@gmail.com" className="hover:underline">
                     cogebimmobiliere@gmail.com
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="tel:+21673323435" className="hover:underline">
                     +216 73 323 435
                   </a>
                 </li>
@@ -70,6 +70,16 @@ export default function Footer() {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-[#145c6b] py-4">
+        <div className="text-center text-white">
+          <p className="text-sm">
+            © {new Date().getFullYear()} . All rights reserved.
+          </p>
+          <p className="text-xs">
+            Developed by SilverLine Solution
+          </p>
         </div>
       </div>
     </div>
